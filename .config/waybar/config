@@ -1,0 +1,43 @@
+{
+    "layer": "top",
+    "modules-left": ["wlr/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio","battery","network"],
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+	"clock": {
+		"format": "{:%R %B %d }",
+	},
+	"network": {
+		"format-wifi": "{essid} ({signalStrength}%) ",
+	},
+	"wlr/workspaces": {
+		"disable-scroll": true,
+		"all-outputs": true,
+		"on-click": "activate",
+		"format": "{icon}",
+		"sort-by-number": true
+	},
+	"pulseaudio": {
+		// "scroll-step": 1, // %, can be a float
+		"format": "{volume}% {icon} {format_source}",
+		//"format-bluetooth": "{volume}% {icon} {format_source}",
+		//"format-bluetooth-muted": "{icon} {format_source}",
+		"format-muted": "0% {icon} {format_source}",
+		"format-source": "{volume}% 󰍬",
+		"format-source-muted": "󰍭",
+		"format-icons": {
+			"headphone": "",
+			"hands-free": "",
+			"headset": "",
+			"phone": "",
+			"portable": "",
+			"car": "",
+			"default": [""]
+		},
+		"on-click": "pavucontrol"
+	},
+}
+
