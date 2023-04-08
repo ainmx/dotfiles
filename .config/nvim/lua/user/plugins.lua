@@ -35,6 +35,8 @@ return packer.startup(function(use)
 	use "nvim-lua/popup.nvim"
 	use "nvim-lua/plenary.nvim"
 
+	use "martinduartemore/vim_agentspeak_jason"
+
 	use "tpope/vim-surround"
 	use "tpope/vim-repeat"
 	use "tpope/vim-commentary"
@@ -111,6 +113,7 @@ return packer.startup(function(use)
 	--appearence
 	-- use "jacoborus/tender.vim"
 	use "lunarvim/darkplus.nvim"
+	use "rebelot/kanagawa.nvim"
 	use "Mofiqul/vscode.nvim"
 	-- use "shaunsingh/nord.nvim"
 	use "rose-pine/neovim"

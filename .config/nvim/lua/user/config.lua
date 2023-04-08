@@ -58,8 +58,9 @@ nnoremap <leader>hv :HopVertical<CR>
 nnoremap <leader>hp :HopPattern<CR>
 nnoremap <leader>hw :HopWord<CR>
 
+set signcolumn=number
 
-colorscheme nightfox
+colorscheme kanagawa-dragon
 
 ]])
 

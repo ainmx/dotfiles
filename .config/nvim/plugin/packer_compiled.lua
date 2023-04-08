@@ -139,6 +139,11 @@ _G.packer_plugins = {
     path = "/home/ainm/.local/share/nvim/site/pack/packer/start/iceberg.nvim",
     url = "https://codeberg.org/oahlen/iceberg.nvim"
   },
+  ["kanagawa.nvim"] = {
+    loaded = true,
+    path = "/home/ainm/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
+  },
   ["kat.nvim"] = {
     loaded = true,
     path = "/home/ainm/.local/share/nvim/site/pack/packer/start/kat.nvim",
@@ -289,6 +294,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ainm/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
+  },
+  vim_agentspeak_jason = {
+    loaded = true,
+    path = "/home/ainm/.local/share/nvim/site/pack/packer/start/vim_agentspeak_jason",
+    url = "https://github.com/martinduartemore/vim_agentspeak_jason"
   },
   ["vscode.nvim"] = {
     loaded = true,
