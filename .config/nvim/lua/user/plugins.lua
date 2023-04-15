@@ -70,10 +70,10 @@ return packer.startup(function(use)
 		}
 	}
 
-	use {
-		"nvim-treesitter/nvim-treesitter",
-		run = ":TSUpdate",
-	}
+	-- use {
+	-- 	"nvim-treesitter/nvim-treesitter",
+	-- 	run = ":TSUpdate",
+	-- }
 
 	use "kyazdani42/nvim-web-devicons"
     use "kyazdani42/nvim-tree.lua"

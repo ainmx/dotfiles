@@ -11,15 +11,6 @@ require('mason-lspconfig').setup_handlers{
 			navbuddy.attach(client, bufnr)
 			navic.attach(client,bufnr)
 		end,
-		-- capabilities = {
-		-- 	textDocument = {
-		-- 		completion = {
-		-- 			completionItem = {
-		-- 				snippetSupport = false
-		-- 			}
-		-- 		}
-		-- 	}
-		-- }
 	}
   end
 }

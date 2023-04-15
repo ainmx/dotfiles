@@ -1,14 +1,13 @@
 -- keymap("", "<Space>", "<Nop>", opts)
 -- vim.g.mapleader = " "
 -- vim.g.maplocalleader = " "
-require("everforest").setup({
-  background = "hard",
-})
+-- require("everforest").setup({
+--   background = "hard",
+-- })
 
-require('noirbuddy').setup {
-  preset = 'kiwi',
-}
-
+-- require('noirbuddy').setup {
+--   preset = 'kiwi',
+-- }
 
 vim.cmd([[
 
@@ -60,7 +59,7 @@ nnoremap <leader>hw :HopWord<CR>
 
 set signcolumn=number
 
-colorscheme kanagawa-dragon
+colorscheme kanagawa
 
 ]])
 
