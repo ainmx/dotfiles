@@ -56,6 +56,10 @@ nnoremap <leader>hl :HopLineStart<CR>
 nnoremap <leader>hv :HopVertical<CR>
 nnoremap <leader>hp :HopPattern<CR>
 nnoremap <leader>hw :HopWord<CR>
+nnoremap <leader>gd :Gitsigns preview_hunk<CR>
+nnoremap <leader>gi :Gitsigns preview_hunk_inline<CR>
+nnoremap <leader>gn :Gitsigns next_hunk<CR>
+nnoremap <leader>gp :Gitsigns prev_hunk<CR>
 
 set signcolumn=number
 
