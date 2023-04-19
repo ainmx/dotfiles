@@ -44,7 +44,7 @@ return packer.startup(function(use)
 
 	use {
 		'phaazon/hop.nvim',
-		branch = 'v2', 
+		branch = 'v2',
 	}
 
 	use "gaborvecsei/memento.nvim"
@@ -69,6 +69,8 @@ return packer.startup(function(use)
 			"MunifTanjim/nui.nvim"
 		}
 	}
+
+	use "lewis6991/gitsigns.nvim"
 
 	-- use {
 	-- 	"nvim-treesitter/nvim-treesitter",
