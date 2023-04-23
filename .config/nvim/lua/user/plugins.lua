@@ -72,6 +72,15 @@ return packer.startup(function(use)
 
 	use "lewis6991/gitsigns.nvim"
 
+	use 'preservim/vim-markdown'
+	-- use "tools-life/taskwiki"
+	use 'vimwiki/vimwiki'
+	use "ellisonleao/glow.nvim"
+
+	-- use {
+	-- 	"oberblastmeister/neuron.nvim",
+	-- 	branch="unstable"}
+
 	-- use {
 	-- 	"nvim-treesitter/nvim-treesitter",
 	-- 	run = ":TSUpdate",
