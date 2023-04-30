@@ -1,6 +1,6 @@
 clock
 ignore-empty-password
-grace=2
+grace=0
 font=Ubuntu Mono
 
 screenshots
