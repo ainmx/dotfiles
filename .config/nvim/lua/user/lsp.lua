@@ -10,6 +10,12 @@ require('mason-lspconfig').setup_handlers{
 		on_attach = function(client, bufnr)
 			navbuddy.attach(client, bufnr)
 			navic.attach(client,bufnr)
+			vim.notify(
+			    string.format("[SERVER] %s\n[CWD] %s", client.name, vim.loop.cwd()),
+			    "info",
+			    { title = "[LSP] active" },
+			    true
+			)
 		end,
 	}
   end
