@@ -53,6 +53,8 @@ return packer.startup(function(use)
 
 	use "gelguy/wilder.nvim"
 
+	use 'rcarriga/nvim-notify'
+
 	use "nvim-telescope/telescope.nvim"
 	use 'nvim-telescope/telescope-media-files.nvim'
 

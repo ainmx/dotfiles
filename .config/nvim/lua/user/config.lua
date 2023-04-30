@@ -74,6 +74,10 @@ colorscheme kanagawa
 
 ]])
 
+vim.notify = require("notify")
+
+require("notify").setup()
+
 require("project_nvim").setup {}
 
 require'tabline'.setup {enable = false}
