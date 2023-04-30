@@ -116,6 +116,8 @@ return packer.startup(function(use)
 		end
 	}
 
+	use "debugloop/telescope-undo.nvim"
+
 	use "ahmedkhalf/project.nvim"
 
 	--use "jose-elias-alvarez/null-ls.nvim"

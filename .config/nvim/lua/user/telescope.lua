@@ -6,6 +6,7 @@ end
 
 telescope.load_extension('media_files')
 telescope.load_extension('projects')
+telescope.load_extension('undo')
 
 
 local actions = require "telescope.actions"
@@ -92,6 +93,28 @@ telescope.setup {
     -- builtin picker
   -- },
   extensions = {
+	undo = {
+      use_delta = true,
+      side_by_side = true,
+	  layout_strategy = "vertical",
+      layout_config = {
+        preview_height = 0.8,
+      },
+      diff_context_lines = vim.o.scrolloff,
+      entry_format = "state #$ID, $STAT, $TIME",
+      mappings = {
+        i = {
+          -- IMPORTANT: Note that telescope-undo must be available when telescope is configured if
+          -- you want to replicate these defaults and use the following actions. This means
+          -- installing as a dependency of telescope in it's `requirements` and loading this
+          -- extension from there instead of having the separate plugin definition as outlined
+          -- above.
+          ["<cr>"] = require("telescope-undo.actions").yank_additions,
+          ["<S-cr>"] = require("telescope-undo.actions").yank_deletions,
+          ["<C-cr>"] = require("telescope-undo.actions").restore,
+        },
+      },
+    },
     media_files = {
         -- filetypes whitelist
         -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}

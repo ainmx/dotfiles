@@ -60,11 +60,13 @@ nnoremap <leader>gd :Gitsigns preview_hunk<CR>
 nnoremap <leader>gi :Gitsigns preview_hunk_inline<CR>
 nnoremap <leader>gn :Gitsigns next_hunk<CR>
 nnoremap <leader>gp :Gitsigns prev_hunk<CR>
+nnoremap <leader>u :Telescope undo<CR>
 
 set signcolumn=number
 
 let g:neovide_scale_factor=0.65
 
+let g:vimwiki_global_ext = 0
 let g:vimwiki_list = [{'path': '~/vimwiki/','syntax': 'markdown', 'ext': '.md'}]
 
 
