@@ -78,6 +78,8 @@ vim.notify = require("notify")
 
 require("notify").setup()
 
+require("colorizer").setup()
+
 require("project_nvim").setup {}
 
 require'tabline'.setup {enable = false}
